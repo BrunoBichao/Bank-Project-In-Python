@@ -35,19 +35,19 @@ while True:
 
         excedeu_saque = numero_saque >= LIMITE_SAQUE
 
-        if exedeu_saldo:
+        if excedeu_saldo:
             print("\nOperação falhou! O valor do saque excede o limite.")
 
         elif excedeu_limite:
             print("\nOperação falhou! O valor de saque excede o limite.")
 
-        elif excedeu_saques:
+        elif excedeu_saque:
             print("\nOperação falhou! Número máximo de saques excedido.")
         
         elif valor > 0:
             saldo -= valor
             extrato += f"Saque: R$ {valor:.2f}\n"
-            numero_saques += 1
+            numero_saque += 1
 
         else:
             print("\nOperação falhou! O valor informado é inválido.")
